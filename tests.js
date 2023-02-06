@@ -2,15 +2,26 @@ class ScratchFetch {
     constructor() {
     }
     
-    getInfo() {
+    alert() {
         return {
-            "id": "Fetch",
-            "name": "Fetch",
-            "blocks": [ /* add later */ ]
+            "name": "alert",
+            "blocks": [{
+              "opcode": "alert",
+                "blocktype": "cap"
+                "text": "alert [string]
+                "arguments": {
+                "string" {
+            "type": "string", 
+                 "defaultvalue": "hello world"
+            }
+             }
+             }]
         }
     }
 
-    /* add methods for blocks */
+    alert ({string}) {
+    alert(string)
+    }
 }
 
 Scratch.extensions.register(new ScratchFetch())
